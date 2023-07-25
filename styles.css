@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #fff;
+    --second-color: #ffa500;
+    --letter-color: #212529;
+}
+
+body {
+    background-image: url(./görseller/bg-image.jpg);
+    color: var(--letter-color);
+}
+
+/* -- NAV BAR AREA ON THE LEFT SIDE OF THE PAGE -- */
+.main-nav-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    margin-left: 50px;
+}
+
+.anchor-tags {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--second-color);
+}
+
+.anchor-tags a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--letter-color); 
+    padding: 6px;
+}
+
+.anchor-tags a:hover {
+    background-color: var(--letter-color);
+    color: var(--background-color);
+}
+
+.main-photo img {
+    width: 300px;
+    border-top-left-radius: 20px;
+}
+
+/* -- MAIN PAGE SIDE -- */
+.main-page {
+    margin: 50px;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 30px 7px #000000;
+    padding-left: 350px;
+    padding-right: 50px;
+}
+
+.main-info {
+    padding: 180px 100px;
+}
+
+.main-info p {
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+
+.main-info .intro {
+    font-size: 5.7rem;
+    text-decoration: underline;
+}
+
+.main-info .name {
+    font-size: 4.2rem;
+    color: var(--second-color);
+}
+
+.main-info .title {
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 5px;
+}
+
+.main-info .social-media {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.main-info .contact-button-box {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Social media icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    border: solid 3px var(--second-color);
+    background: var(--letter-color);
+    color: var(--background-color);
+  }
+
+.fa:hover {
+    border: solid 3px var(--letter-color);
+    background: var(--second-color);
+    color: var(--background-color);
+}
+
+
+/* -- ABOUT ME -- */
+
+.h2 {
+    text-align: center;
+    border: solid  3px var(--letter-color);
+    padding: 10px;
+    font-size: 3rem;
+    background-color: var(--second-color);
+}
+
+.about-me {
+    padding-bottom: 180px;
+}
+
+.about-me .intro {
+    padding: 60px 20px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--second-color);
+
+}
+
+.about-me .first-info {
+    font-weight: bold;
+}
+
+
+.line {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+.line-right {
+    border-top: dashed 3px var(--second-color);
+    border-right: dashed 3px var(--second-color);
+    text-align: right;
+    padding-right: 50px;
+}
+
+.line-left {
+    border-top: dashed 3px var(--second-color);
+    border-left: dashed 3px var(--second-color);
+    padding-left: 50px;
+}
+
+.line-last {
+    border-top: dashed 3px var(--second-color);
+    border-left: dashed 3px var(--second-color);
+    border-bottom: dashed 3px var(--second-color);
+    padding-left: 50px;
+}
+
+
+
+/* --  SKILLS -- */
+.skill h3 {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3rem;
+    color: var(--letter-color)
+}
+
+.skill img {
+    width: 200px;
+}
+
+.skills-div1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.skills-div2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 180px;
+}
+
+
+/* --  PROJECTS -- */
+.projects img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.projects-line1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.projects-line2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.project {
+    text-align: center;
+    border: solid 4px var(--letter-color);
+    margin: 40px 30px;
+    border-top-right-radius: 50% ;
+    border-top-left-radius: 50% ;
+}
+
+.project h3 {
+    background-color: var(--letter-color);
+    color: var(--second-color);
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.project p {
+    padding: 10px;
+    font-size: 1.1rem;
+
+}
+
+.project a {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: var(--second-color);
+    background-color: var(--letter-color);
+    font-size: 1.2rem;
+}
+
+.project a:hover {
+    color: var(--letter-color);
+    background-color: var(--second-color);
+}
+
+
+
+/* --  BLOGS -- */
+.main-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(./görseller/blogs-5.png); 
+    margin-bottom: 200px;
+}
+
+.first-div, .second-div, .third-div, .forth-div, .fifth-div{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.main-div .box {
+    border: solid 3px var(--second-color);
+    width: 50%;
+    text-align: center;
+    padding: 60px 0;
+    color: var(--background-color);
+    font-size: 1rem;
+    background-color: var(--letter-color);
+    transition: transform 0.5s ease-in;
+}
+
+.box a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.main-div .box:hover {
+    transform: scale(1.1);
+    opacity: 95%;
+}
+
+
+/* --  CONTACT -- */
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.contact-div {
+    display: flex;
+    align-items: center;
+}
+
+.main-contact img {
+    width: 100px;
+    padding: 20px 0 ;
+}
+
+.main-contact p {
+    padding-left: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.main-contact a {
+    text-decoration: none;
+    color: var(--letter-color);
+}
+
+.main-contact a:hover {
+    color: var(--second-color);
+}
+
+#final-info {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    color: var(--second-color);
+}
